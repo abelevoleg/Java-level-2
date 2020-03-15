@@ -54,6 +54,7 @@ public class ClientGUI extends JFrame implements ActionListener, Thread.Uncaught
         scrollUsers.setPreferredSize(new Dimension(100, 0));
         cbAlwaysOnTop.addActionListener(this);
 
+
         btnSend.addActionListener(listenerSend); /* Добавление слушателя кнопки send, при нажатии на которую
                                                   набранный текст отправляется в поле log*/
 
@@ -97,6 +98,7 @@ public class ClientGUI extends JFrame implements ActionListener, Thread.Uncaught
         System.exit(1);
     }
 
+    
     ActionListener listenerSend = new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent e) {
